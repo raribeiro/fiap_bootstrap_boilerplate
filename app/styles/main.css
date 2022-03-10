@@ -34,9 +34,8 @@ body {
 
 /* Custom page footer */
 .footer {
-  padding-top: 1.5rem;
+  padding-top: 0.1rem;
   color: #777;
-  border-top: .05rem solid #e5e5e5;
 }
 
 /* Customize container */
@@ -53,10 +52,6 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
 }
 
 /* Supporting marketing content */
@@ -84,4 +79,9 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/**/
+.btn-signup {
+  margin-top: 10px;
 }
