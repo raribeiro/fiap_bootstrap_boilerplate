@@ -1,0 +1,18 @@
+npm install -g yo
+npm install -g generator-webapp
+mkdir ativ_cap4_07_02_a_11_03
+npm install -g gulp
+
+yo webapp
+
+git init
+
+git remote add origin git@github.com:raribeiro/fiap_bootstrap_boilerplate.git
+
+git add -A
+
+git branch -m master
+
+git commit -m
+
+git push origin master
