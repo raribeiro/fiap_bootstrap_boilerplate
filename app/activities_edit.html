@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>fiap_bootstrap_boilerplate</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+      <div class="row header">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Health Track</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="activities.html">Minhas atividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="weight.html">Histórico de peso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Configurações</a>
+                </li>
+              </ul>
+              <a href="new_activities.html" class="btn btn-sm btn-outline-success" type="submit">nova atividade +</a> | 
+              <a href="login.html" class="btn btn danger btn-sm btn-outline-danger" type="submit">desconectar</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div>
+        <container>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Editando atividade de 10/03/2022</h4>
+
+                <form action="activities.html">
+                  <div class="form-group">
+                    <input type="date" class="form-control" required="required">
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Corrida</option>
+                      <option>Bicicleta</option>
+                      <option>Caminhada</option>
+                      <option>Academia</option>
+                      <option>Outros</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" required="required" value="10kg">
+                  </div>                  
+                  <button class="btn btn-primary btn-sm">salvar informações</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </container>
+      </div>     
+      <hr>
+      <div class="footer">
+        <p class="text-center">FIAP ♥ FIAP</p>
+      </div>
+    </div>
+    <!-- build:js scripts/vendor.js -->
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
