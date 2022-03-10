@@ -89,3 +89,7 @@ body {
 .chart {
   max-height: 350px;
 }
+
+.btn-weight {
+  margin-bottom: 10px;
+}

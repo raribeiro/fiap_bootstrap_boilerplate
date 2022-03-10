@@ -31,13 +31,13 @@
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Dashboard</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="activities.html">Minhas atividades</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="weight.html">Histórico de peso</a>
                 </li>
                 <li class="nav-item">
@@ -52,44 +52,46 @@
 
       <div>
         <container>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="btn btn-sm btn-outline-success btn-weight" type="submit">adicionar informação +</a>
+            </div>
+        </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">Últimas atividades lançadas</h4>
+                <h4 class="alert-heading">Histórico detalhado de peso</h4>                
                 <table class="table">
                   <thead>
                     <tr>
                       <th scope="col">Data</th>
-                      <th scope="col">Atividade</th>
-                      <th scope="col">Detalhe</th>
+                      <th scope="col">Peso</th>
+                      <th scope="col">Observação</th>
                       <th scope="col">ação</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">10/03</th>
-                      <td>Corrida</td>
-                      <td>10km</td>
+                      <td>88kg</td>
+                      <td>Observação</td>
                       <td><a href="http://" class="link">editar</a></td>
                     </tr>
                     <tr>
                       <th scope="row">12/03</th>
-                      <td>Bicicleta</td>
-                      <td>3km</td>
+                      <td>86.2kg</td>
+                      <td>Observação</td>
                       <td><a href="http://" class="link">editar</a></td>
                     </tr>
                     <tr>
                       <th scope="row">18/03</th>
-                      <td>Corrida</td>
-                      <td>10km</td>
+                      <td>78kg</td>
+                      <td>Observação</td>
                       <td><a href="http://" class="link">editar</a></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-            <div class="col-md-6">
-              <canvas id="myChart" width="400" height="210"></canvas>
             </div>
           </div>
         </container>
