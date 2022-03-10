@@ -8,6 +8,7 @@
     <title>fiap_bootstrap_boilerplate</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
     <!-- endbuild -->
@@ -20,47 +21,90 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">fiap_bootstrap_boilerplate</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
+      <div class="row header">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Health Track</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Minhas atividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Histórico de peso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Configurações</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-sm btn-outline-success" type="submit">nova atividade +</a>
+            </div>
+          </nav>
         </div>
       </div>
 
+      <div>
+        <container>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Últimas atividades lançadas</h4>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Data</th>
+                      <th scope="col">Atividade</th>
+                      <th scope="col">Detalhe</th>
+                      <th scope="col">ação</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">10/03</th>
+                      <td>Corrida</td>
+                      <td>10km</td>
+                      <td><a href="http://" class="link">editar</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">12/03</th>
+                      <td>Bicicleta</td>
+                      <td>3km</td>
+                      <td><a href="http://" class="link">editar</a></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">18/03</th>
+                      <td>Corrida</td>
+                      <td>10km</td>
+                      <td><a href="http://" class="link">editar</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <canvas id="myChart" width="400" height="210"></canvas>
+            </div>
+          </div>
+        </container>
+      </div>     
+      <hr>
       <div class="footer">
-        <p>♥ from the Yeoman team</p>
+        <p class="text-center">FIAP ♥ FIAP</p>
       </div>
     </div>
     <!-- build:js scripts/vendor.js -->
     <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- endbuild -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
