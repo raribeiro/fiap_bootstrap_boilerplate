@@ -40,7 +40,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="weight.html">Histórico de peso</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="config.html">Configurações</a>
                 </li>
               </ul>
@@ -52,28 +52,38 @@
       </div>
 
       <div>
-        <container>
+        <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">Adicionar informação de peso</h4>
+                <h4 class="alert-heading">Informações pessoais</h4>
 
-                <form action="weight.html">
+                <form action="index.html">
                     <div class="form-group">
-                      <input type="date" class="form-control" required="required">
+                        <input type="text" class="form-control" required="required" value="Rodnei A. Ribeiro" aria-describedby="emailHelp" placeholder="@provedor.com.br">
+                      </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" required="required"  aria-describedby="emailHelp" placeholder="rodnei.solucoes@gmail.com">
                     </div>
                     <div class="form-group">
-                      <input type="number" class="form-control" required="required" value="88.2">
-                    </div>  
+                      <input type="password" class="form-control" required="required" placeholder="Senha atual">
+                    </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" required="required" value="Observações">
-                    </div>                  
-                    <button class="btn btn-primary btn-sm">salvar informações</button>
+                      <input type="password" class="form-control" required="required"  placeholder="Nova senha">
+                    </div>                    
+                    <button type="submit" class="btn btn-primary btn-sm">Salvar informações</button>
                   </form>
               </div>
             </div>
           </div>
-        </container>
+          <div class="row">
+            <div class="col-md-12">
+              <small>
+                <a href="#">Quer deletar sua conta?</a>
+              </small>
+            </div>
+          </div>
+        </div>
       </div>     
       <hr>
       <div class="footer">
