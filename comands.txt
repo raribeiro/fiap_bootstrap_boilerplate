@@ -1,18 +1,37 @@
-npm install -g yo
-npm install -g generator-webapp
-mkdir ativ_cap4_07_02_a_11_03
-npm install -g gulp
+# Exercício boilerplate health track com yeoman
 
-yo webapp
+Link do meu perfil no github: https://github.com/raribeiro
+Link para o repositório: https://github.com/raribeiro/fiap_bootstrap_boilerplate
 
-git init
+## comandos para iniciar o projeto localmente e subir para o github
 
-git remote add origin git@github.com:raribeiro/fiap_bootstrap_boilerplate.git
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
-git add -A
+$ source ~/.bashrc
 
-git branch -m master
+$ nvm install node
 
-git commit -m
+$ npm install -g yo
+$ npm install -g generator-gulp-webapp
 
-git push origin master
+$ mkdir ativ_cap4_07_02_a_11_03
+
+$ npm install -g gulp
+
+$ yo webappgulp-webapp
+
+$ git init
+
+$ git remote add origin git@github.com:raribeiro/fiap_bootstrap_boilerplate.git
+
+$ git add -A
+
+$ git branch -m master
+
+$ git commit -m
+
+$ git push origin master
+
+## gerando arquivos finais para deploy
+
+$ gulp build
